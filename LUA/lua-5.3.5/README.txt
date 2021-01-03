@@ -22,3 +22,8 @@ make.bat updated
   cmake -H. -Bbuild -G"%GENERATOR%" -A Win32
 
 see cmake --help
+
+= = = =
+
+luarocks doesn't install/build packages with x64-version of lua
+lua was recompiled with win32 arch parameter

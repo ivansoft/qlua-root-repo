@@ -1,0 +1,94 @@
+LuaRocks 3.0.x installer.
+
+
+========================
+== Checking system... ==
+========================
+
+
+Attempting to install without admin privileges...
+Looking for Lua interpreter
+    checking C:\FX\LUA\lua-5.3.5
+       Found lua.exe, testing it...
+Interpreter found, now looking for link libraries...
+    checking for C:\FX\LUA\lua-5.3.5\lua5.3.lib
+    checking for C:\FX\LUA\lua-5.3.5\lua53.lib
+    checking for C:\FX\LUA\lua-5.3.5\lua5.3.dll
+    checking for C:\FX\LUA\lua-5.3.5\lua53.dll
+    checking for C:\FX\LUA\lua-5.3.5\liblua.dll.a
+    checking for C:\FX\LUA\lua-5.3.5\lib\lua5.3.lib
+    checking for C:\FX\LUA\lua-5.3.5\lib\lua53.lib
+       Found lua53.lib
+Link library found, now looking for headers...
+    checking for C:\FX\LUA\lua-5.3.5\include\lua\5.3\lua.h
+    checking for C:\FX\LUA\lua-5.3.5\include\lua53\lua.h
+    checking for C:\FX\LUA\lua-5.3.5\include\lua5.3\lua.h
+    checking for C:\FX\LUA\lua-5.3.5\include\lua.h
+       Found lua.h
+Headers found, checking runtime to use...
+    C:\FX\LUA\lua-5.3.5\bin\lua.exe uses VCRUNTIME140.DLL as runtime
+Runtime check completed.
+arch: 14c -> IMAGE_FILE_MACHINE_I386
+
+==========================
+== System check results ==
+==========================
+
+Will configure LuaRocks with the following paths:
+LuaRocks        : C:\FX\LUA\lua-5.3.5\luarocks
+Config file     : C:\FX\LUA\lua-5.3.5\luarocks\config-5.3.lua
+Rocktree        : C:\FX\LUA\lua-5.3.5\luarocks\systree
+
+Lua interpreter : C:\FX\LUA\lua-5.3.5\bin\lua.exe
+    binaries    : C:\FX\LUA\lua-5.3.5\bin
+    libraries   : C:\FX\LUA\lua-5.3.5\lib
+    includes    : C:\FX\LUA\lua-5.3.5\include
+    architecture: x86
+    binary link : lua53.lib with runtime VCRUNTIME140.dll
+
+Compiler        : Microsoft (make sure it is in your path before using LuaRocks)
+
+Press <ENTER> to start installing, or press <CTRL>+<C> to abort. Use install /? for installation options.
+
+
+============================
+== Installing LuaRocks... ==
+============================
+
+
+Installing LuaRocks in C:\FX\LUA\lua-5.3.5\luarocks...
+Created LuaRocks command: C:\FX\LUA\lua-5.3.5\luarocks\luarocks.bat
+Created LuaRocks command: C:\FX\LUA\lua-5.3.5\luarocks\luarocks-admin.bat
+
+Configuring LuaRocks...
+Created LuaRocks hardcoded settings file: C:\FX\LUA\lua-5.3.5\luarocks\lua\luarocks\core\hardcoded.lua
+Created LuaRocks config file: C:\FX\LUA\lua-5.3.5\luarocks\config-5.3.lua
+
+Creating rocktrees...
+Created system rocktree    : "C:\FX\LUA\lua-5.3.5\luarocks\systree"
+Local user rocktree exists : "C:\Users\ivansoft\AppData\Roaming\LuaRocks"
+
+============================
+== LuaRocks is installed! ==
+============================
+
+
+You may want to add the following elements to your paths;
+Lua interpreter;
+  PATH     :   C:\FX\LUA\lua-5.3.5\bin
+  PATHEXT  :   .LUA
+LuaRocks;
+  PATH     :   C:\FX\LUA\lua-5.3.5\luarocks
+  LUA_PATH :   C:\FX\LUA\lua-5.3.5\luarocks\lua\?.lua;C:\FX\LUA\lua-5.3.5\luarocks\lua\?\init.lua
+Local user rocktree (Note: %APPDATA% is user dependent);
+  PATH     :   %APPDATA%\LuaRocks\bin
+  LUA_PATH :   %APPDATA%\LuaRocks\share\lua\5.3\?.lua;%APPDATA%\LuaRocks\share\lua\5.3\?\init.lua
+  LUA_CPATH:   %APPDATA%\LuaRocks\lib\lua\5.3\?.dll
+System rocktree
+  PATH     :   C:\FX\LUA\lua-5.3.5\luarocks\systree\bin
+  LUA_PATH :   C:\FX\LUA\lua-5.3.5\luarocks\systree\share\lua\5.3\?.lua;C:\FX\LUA\lua-5.3.5\luarocks\systree\share\lua\5.3\?\init.lua
+  LUA_CPATH:   C:\FX\LUA\lua-5.3.5\luarocks\systree\lib\lua\5.3\?.dll
+
+Note that the %APPDATA% element in the paths above is user specific and it MUST be replaced by its actual value.
+For the current user that value is: C:\Users\ivansoft\AppData\Roaming.
+
