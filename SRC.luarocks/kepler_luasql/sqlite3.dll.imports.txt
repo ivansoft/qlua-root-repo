@@ -1,0 +1,154 @@
+Microsoft (R) COFF/PE Dumper Version 14.28.29335.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file sqlite3.dll
+
+File Type: DLL
+
+  Section contains the following imports:
+
+    KERNEL32.dll
+             1801DB538 Import Address Table
+             1801DB028 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         145 FlushViewOfFile
+                         223 GetProcessHeap
+                         335 OutputDebugStringW
+                         334 OutputDebugStringA
+                         469 WaitForSingleObjectEx
+                         468 WaitForSingleObject
+                         491 WriteFile
+                         47E WideCharToMultiByte
+                         445 UnmapViewOfFile
+                         444 UnlockFileEx
+                         443 UnlockFile
+                         42E SystemTimeToFileTime
+                         425 Sleep
+                         3E4 SetFilePointer
+                         3D2 SetEndOfFile
+                         362 ReadFile
+                         34E QueryPerformanceCounter
+                         314 MultiByteToWideChar
+                         304 MapViewOfFile
+                         300 LockFileEx
+                         2FF LockFile
+                         2F7 LocalFree
+                         2EE LoadLibraryW
+                         2EB LoadLibraryA
+                         29E HeapCompact
+                         2A9 HeapValidate
+                         2A6 HeapSize
+                         2A4 HeapReAlloc
+                         2A1 HeapFree
+                         2A0 HeapDestroy
+                         29F HeapCreate
+                         29D HeapAlloc
+                         276 GetVersionExW
+                         275 GetVersionExA
+                         266 GetTickCount
+                         25B GetTempPathW
+                         25A GetTempPathA
+                         24F GetSystemTimeAsFileTime
+                         24D GetSystemTime
+                         249 GetSystemInfo
+                         220 GetProcAddress
+                         1E6 GetLastError
+                         1E0 GetFullPathNameW
+                         1DD GetFullPathNameA
+                         1D5 GetFileSize
+                         1CC GetFileAttributesExW
+                         1CF GetFileAttributesW
+                         1CA GetFileAttributesA
+                         1B8 GetDiskFreeSpaceW
+                         1B5 GetDiskFreeSpaceA
+                         1AB GetCurrentProcessId
+                         14D FreeLibrary
+                         149 FormatMessageW
+                         148 FormatMessageA
+                         142 FlushFileBuffers
+                          C4 DeleteFileW
+                          C1 DeleteFileA
+                          8F CreateMutexW
+                          7D CreateFileMappingW
+                          7A CreateFileMappingA
+                          80 CreateFileW
+                          79 CreateFileA
+                          43 CloseHandle
+                          13 AreFileApisANSI
+                          BF DeleteCriticalSection
+                          DA EnterCriticalSection
+                         2E9 LeaveCriticalSection
+                         2B4 InitializeCriticalSection
+                         43D TryEnterCriticalSection
+                         1AE GetCurrentThreadId
+                         106 ExitThread
+                          A3 CreateThread
+                         140 FlsSetValue
+                         170 GetCommandLineA
+                         431 TerminateProcess
+                         1AA GetCurrentProcess
+                         442 UnhandledExceptionFilter
+                         419 SetUnhandledExceptionFilter
+                         2CB IsDebuggerPresent
+                         397 RtlVirtualUnwind
+                         390 RtlLookupFunctionEntry
+                         389 RtlCaptureContext
+                         26B GetTimeZoneInformation
+                         2A5 HeapSetInformation
+                          D6 EncodePointer
+                          B8 DecodePointer
+                         436 TlsAlloc
+                         13F FlsGetValue
+                         13E FlsFree
+                         3F0 SetLastError
+                         1AD GetCurrentThread
+                         13D FlsAlloc
+                         396 RtlUnwindEx
+                         1F9 GetModuleHandleW
+                         105 ExitProcess
+                         23B GetStdHandle
+                         1F4 GetModuleFileNameA
+                         3EC SetHandleCount
+                         1D8 GetFileType
+                         239 GetStartupInfoA
+                         14B FreeEnvironmentStringsA
+                         1C0 GetEnvironmentStrings
+                         14C FreeEnvironmentStringsW
+                         1C2 GetEnvironmentStringsW
+                         10C FatalAppExitA
+                         15C GetCPInfo
+                         153 GetACP
+                         213 GetOEMCP
+                         2D5 IsValidCodePage
+                         3AC SetConsoleCtrlHandler
+                         2B5 InitializeCriticalSectionAndSpinCount
+                         2DB LCMapStringA
+                         2DD LCMapStringW
+                         23D GetStringTypeA
+                         240 GetStringTypeW
+                         1AF GetDateFormatA
+                         268 GetTimeFormatA
+                         26D GetUserDefaultLCID
+                         1E8 GetLocaleInfoA
+                          F9 EnumSystemLocalesA
+                         2D7 IsValidLocale
+                         1EA GetLocaleInfoW
+                         354 RaiseException
+                          52 CompareStringA
+                          55 CompareStringW
+                         3D5 SetEnvironmentVariableA
+
+  Summary
+
+        9000 .data
+        2000 .idata
+       13000 .pdata
+       3A000 .rdata
+        3000 .reloc
+        2000 .rsrc
+      184000 .text
+        3000 data
+        1000 text
