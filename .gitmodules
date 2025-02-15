@@ -1,0 +1,3 @@
+[submodule "QLUA"]
+	path = QLUA
+	url = https://github.com/ivansoft/qlua-quik-workspace
