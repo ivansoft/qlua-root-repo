@@ -1,3 +1,6 @@
 [submodule "QLUA"]
 	path = QLUA
 	url = https://github.com/ivansoft/qlua-quik-workspace
+[submodule "Tools/python-dbg-controller"]
+	path = Tools/python-dbg-controller
+	url = https://github.com/ivansoft/python-dbg-controller
