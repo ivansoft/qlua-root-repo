@@ -1,6 +1,15 @@
 [submodule "QLUA"]
 	path = QLUA
 	url = https://github.com/ivansoft/qlua-quik-workspace
+	fetchRecurseSubmodules = true
 [submodule "python-dbg-controller"]
 	path = Tools/python-dbg-controller
 	url = https://github.com/ivansoft/python-dbg-controller
+[submodule "lua-5.3.5"]
+	path = LUA/lua-5.3.5/src
+	url = https://github.com/lua/lua
+	branch = v5.3
+[submodule "lua-5.4.1"]
+	path = LUA/lua-5.4.1/src
+	url = https://github.com/lua/lua
+	branch = v5.4
