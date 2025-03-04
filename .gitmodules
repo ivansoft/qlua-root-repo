@@ -16,3 +16,39 @@
 [submodule "luarocks"]
 	path = LUA/luarocks
 	url = https://github.com/luarocks/luarocks
+[submodule "luamodules/dkjson"]
+	path = SRC.Modules/dkjson
+	url = https://github.com/LuaDist/dkjson
+[submodule "luamodules/lpeg"]
+	path = SRC.Modules/lpeg
+	url = https://github.com/LuaDist/lpeg
+[submodule "luamodules/inspect"]
+	path = SRC.Modules/inspect
+	url = https://github.com/kikito/inspect.lua
+[submodule "luamodules/kepler_copas"]
+	path = SRC.Modules/kepler_copas
+	url = https://github.com/keplerproject/copas
+[submodule "luamodules/kepler_luafs"]
+	path = SRC.Modules/kepler_luafs
+	url = https://github.com/keplerproject/luafilesystem
+[submodule "luamodules/kepler_luasql"]
+	path = SRC.Modules/kepler_luasql
+	url = https://github.com/keplerproject/luasql
+[submodule "luamodules/cjson"]
+	path = SRC.Modules/cjson
+	url = https://github.com/mpx/lua-cjson
+[submodule "luamodules/htmlEntities"]
+	path = SRC.Modules/htmlEntities
+	url = https://github.com/TiagoDanin/htmlEntities-for-lua
+[submodule "luamodules/multipart-post"]
+	path = SRC.Modules/multipart-post
+	url = https://github.com/catwell/lua-multipart-post
+[submodule "luamodules/luasec"]
+	path = SRC.Modules/luasec
+	url = https://github.com/brunoos/luasec
+[submodule "luamodules/luasocket"]
+	path = SRC.Modules/luasocket
+	url = https://github.com/diegonehab/luasocket
+[submodule "luamodules/luautf8"]
+	path = SRC.Modules/luautf8
+	url = https://github.com/starwing/luautf8
