@@ -61,3 +61,6 @@
 [submodule "native/perl"]
 	path = SRC.native/openssl/perl-msys-bin
 	url = git@github.com:ivansoft/perl-5.8.8-1-msys-1.0.17-bin.git
+[submodule "native/sqlite"]
+	path = SRC.native/sqlite/sqlite
+	url = https://github.com/sqlite/sqlite
