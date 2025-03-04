@@ -17,38 +17,38 @@
 	path = LUA/luarocks
 	url = https://github.com/luarocks/luarocks
 [submodule "luamodules/dkjson"]
-	path = SRC.Modules/dkjson/src
+	path = SRC.luarocks/dkjson/src
 	url = https://github.com/LuaDist/dkjson
 [submodule "luamodules/lpeg"]
-	path = SRC.Modules/lpeg/src
+	path = SRC.luarocks/lpeg/src
 	url = https://github.com/LuaDist/lpeg
 [submodule "luamodules/inspect"]
-	path = SRC.Modules/inspect/src
+	path = SRC.luarocks/inspect/src
 	url = https://github.com/kikito/inspect.lua
 [submodule "luamodules/kepler_copas"]
-	path = SRC.Modules/kepler_copas/src
+	path = SRC.luarocks/kepler_copas/src
 	url = https://github.com/keplerproject/copas
 [submodule "luamodules/kepler_luafs"]
-	path = SRC.Modules/kepler_luafs/src
+	path = SRC.luarocks/kepler_luafs/src
 	url = https://github.com/keplerproject/luafilesystem
 [submodule "luamodules/kepler_luasql"]
-	path = SRC.Modules/kepler_luasql/src
+	path = SRC.luarocks/kepler_luasql/src
 	url = https://github.com/keplerproject/luasql
 [submodule "luamodules/cjson"]
-	path = SRC.Modules/cjson/src
+	path = SRC.luarocks/cjson/src
 	url = https://github.com/mpx/lua-cjson
 [submodule "luamodules/htmlEntities"]
-	path = SRC.Modules/htmlEntities/src
+	path = SRC.luarocks/htmlEntities/src
 	url = https://github.com/TiagoDanin/htmlEntities-for-lua
 [submodule "luamodules/multipart-post"]
-	path = SRC.Modules/multipart-post/src
+	path = SRC.luarocks/multipart-post/src
 	url = https://github.com/catwell/lua-multipart-post
 [submodule "luamodules/luasec"]
-	path = SRC.Modules/luasec/src
+	path = SRC.luarocks/luasec/src
 	url = https://github.com/brunoos/luasec
 [submodule "luamodules/luasocket"]
-	path = SRC.Modules/luasocket/src
+	path = SRC.luarocks/luasocket/src
 	url = https://github.com/diegonehab/luasocket
 [submodule "luamodules/luautf8"]
-	path = SRC.Modules/luautf8/src
+	path = SRC.luarocks/luautf8/src
 	url = https://github.com/starwing/luautf8
