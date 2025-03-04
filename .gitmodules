@@ -56,8 +56,8 @@
 	path = SRC.native/openssl/openssl
 	url = https://github.com/openssl/openssl
 [submodule "native/perl"]
-	path = SRC.native/openssl/perl-5.8.8-1-msys-bin
-	url = git@github.com:ivansoft/perl-5.8.8-1-msys-1.0.17-bin.git
+	path = SRC.native/openssl/strawberry-perl-5.40.0.1-bin
+	url = git@github.com:ivansoft/strawberry-perl-5.40.0.1-64bit-portable.git
 [submodule "native/sqlite"]
 	path = SRC.native/sqlite/sqlite
 	url = https://github.com/sqlite/sqlite
