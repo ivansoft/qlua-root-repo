@@ -55,11 +55,8 @@
 [submodule "native/openssl"]
 	path = SRC.native/openssl/openssl
 	url = https://github.com/openssl/openssl
-[submodule "native/nasm"]
-	path = SRC.native/openssl/nasm
-	url = https://github.com/netwide-assembler/nasm
 [submodule "native/perl"]
-	path = SRC.native/openssl/perl-msys-bin
+	path = SRC.native/openssl/perl-5.8.8-1-msys-bin
 	url = git@github.com:ivansoft/perl-5.8.8-1-msys-1.0.17-bin.git
 [submodule "native/sqlite"]
 	path = SRC.native/sqlite/sqlite
