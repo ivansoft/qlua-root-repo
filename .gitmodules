@@ -13,6 +13,9 @@
 	path = LUA/lua-5.4.1/src
 	url = https://github.com/lua/lua
 	branch = v5.4
+[submodule "luac"]
+	path = LUA/luac
+	url = https://github.com/lua/luac
 [submodule "luarocks"]
 	path = LUA/luarocks
 	url = https://github.com/luarocks/luarocks
