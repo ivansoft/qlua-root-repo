@@ -10,7 +10,7 @@
 	url = https://github.com/lua/lua
 	branch = v5.3
 [submodule "lua-5.4.1"]
-	path = LUA/lua-5.4.1/src
+	path = LUA/lua-5.4.1/src.lua
 	url = https://github.com/lua/lua
 	branch = v5.4
 [submodule "luac"]
