@@ -10,7 +10,7 @@ File Type: EXECUTABLE IMAGE
 
     lua54.dll
              1400031E8 Import Address Table
-             140004078 Import Name Table
+             140004080 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -55,7 +55,7 @@ File Type: EXECUTABLE IMAGE
 
     VCRUNTIME140.dll
              140003080 Import Address Table
-             140003F10 Import Name Table
+             140003F18 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -67,7 +67,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-stdio-l1-1-0.dll
              140003190 Import Address Table
-             140004020 Import Name Table
+             140004028 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -84,7 +84,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-environment-l1-1-0.dll
              1400030B0 Import Address Table
-             140003F40 Import Name Table
+             140003F48 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -92,7 +92,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-runtime-l1-1-0.dll
              1400030F0 Import Address Table
-             140003F80 Import Name Table
+             140003F88 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -118,7 +118,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-math-l1-1-0.dll
              1400030E0 Import Address Table
-             140003F70 Import Name Table
+             140003F78 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -126,7 +126,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-locale-l1-1-0.dll
              1400030D0 Import Address Table
-             140003F60 Import Name Table
+             140003F68 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -134,7 +134,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-heap-l1-1-0.dll
              1400030C0 Import Address Table
-             140003F50 Import Name Table
+             140003F58 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -142,7 +142,7 @@ File Type: EXECUTABLE IMAGE
 
     KERNEL32.dll
              140003000 Import Address Table
-             140003E90 Import Name Table
+             140003E98 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 

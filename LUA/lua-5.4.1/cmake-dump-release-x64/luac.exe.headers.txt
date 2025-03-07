@@ -11,7 +11,7 @@ File Type: EXECUTABLE IMAGE
 FILE HEADER VALUES
             8664 machine (x64)
                6 number of sections
-        67CB47C5 time date stamp Fri Mar  7 22:23:49 2025
+        67CB6426 time date stamp Sat Mar  8 00:24:54 2025
                0 file pointer to symbol table
                0 number of symbols
               F0 size of optional header
@@ -22,19 +22,19 @@ FILE HEADER VALUES
 OPTIONAL HEADER VALUES
              20B magic # (PE32+)
            14.43 linker version
-           21600 size of code
-            9600 size of initialized data
+           1CA00 size of code
+            7A00 size of initialized data
                0 size of uninitialized data
-           21A10 entry point (0000000140021A10)
+           1CDC0 entry point (000000014001CDC0)
             1000 base of code
-       140000000 image base (0000000140000000 to 000000014002FFFF)
+       140000000 image base (0000000140000000 to 0000000140027FFF)
             1000 section alignment
              200 file alignment
             6.00 operating system version
             0.00 image version
             6.00 subsystem version
                0 Win32 version
-           30000 size of image
+           28000 size of image
              400 size of headers
                0 checksum
                3 subsystem (Windows CUI)
@@ -49,19 +49,19 @@ OPTIONAL HEADER VALUES
             1000 size of heap commit
                0 loader flags
               10 number of directories
-           27D50 [     D5C] RVA [size] of Export Directory
-           28AAC [      DC] RVA [size] of Import Directory
-           2E000 [     1E0] RVA [size] of Resource Directory
-           2B000 [    2304] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Export Directory
+           225A4 [      DC] RVA [size] of Import Directory
+           26000 [     1E0] RVA [size] of Resource Directory
+           24000 [    1C68] RVA [size] of Exception Directory
                0 [       0] RVA [size] of Certificates Directory
-           2F000 [     190] RVA [size] of Base Relocation Directory
-           256D0 [      1C] RVA [size] of Debug Directory
+           27000 [     190] RVA [size] of Base Relocation Directory
+           202C0 [      1C] RVA [size] of Debug Directory
                0 [       0] RVA [size] of Architecture Directory
                0 [       0] RVA [size] of Global Pointer Directory
                0 [       0] RVA [size] of Thread Storage Directory
-           25590 [     140] RVA [size] of Load Configuration Directory
+           20180 [     140] RVA [size] of Load Configuration Directory
                0 [       0] RVA [size] of Bound Import Directory
-           23000 [     2C0] RVA [size] of Import Address Table Directory
+           1E000 [     2B0] RVA [size] of Import Address Table Directory
                0 [       0] RVA [size] of Delay Import Directory
                0 [       0] RVA [size] of COM Descriptor Directory
                0 [       0] RVA [size] of Reserved Directory
@@ -69,10 +69,10 @@ OPTIONAL HEADER VALUES
 
 SECTION HEADER #1
    .text name
-   215AC virtual size
-    1000 virtual address (0000000140001000 to 00000001400225AB)
-   21600 size of raw data
-     400 file pointer to raw data (00000400 to 000219FF)
+   1C95C virtual size
+    1000 virtual address (0000000140001000 to 000000014001D95B)
+   1CA00 size of raw data
+     400 file pointer to raw data (00000400 to 0001CDFF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -83,10 +83,10 @@ SECTION HEADER #1
 
 SECTION HEADER #2
   .rdata name
-    6460 virtual size
-   23000 virtual address (0000000140023000 to 000000014002945F)
-    6600 size of raw data
-   21A00 file pointer to raw data (00021A00 to 00027FFF)
+    4F34 virtual size
+   1E000 virtual address (000000014001E000 to 0000000140022F33)
+    5000 size of raw data
+   1CE00 file pointer to raw data (0001CE00 to 00021DFF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -99,14 +99,14 @@ SECTION HEADER #2
 
         Time Type        Size      RVA  Pointer
     -------- ------- -------- -------- --------
-    67CB47C5 coffgrp      294 00025858    24258
+    67CB6426 coffgrp      284 0002042C    1F22C
 
 SECTION HEADER #3
    .data name
      6E0 virtual size
-   2A000 virtual address (000000014002A000 to 000000014002A6DF)
+   23000 virtual address (0000000140023000 to 00000001400236DF)
      200 size of raw data
-   28000 file pointer to raw data (00028000 to 000281FF)
+   21E00 file pointer to raw data (00021E00 to 00021FFF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -117,10 +117,10 @@ C0000040 flags
 
 SECTION HEADER #4
   .pdata name
-    2304 virtual size
-   2B000 virtual address (000000014002B000 to 000000014002D303)
-    2400 size of raw data
-   28200 file pointer to raw data (00028200 to 0002A5FF)
+    1C68 virtual size
+   24000 virtual address (0000000140024000 to 0000000140025C67)
+    1E00 size of raw data
+   22000 file pointer to raw data (00022000 to 00023DFF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -132,9 +132,9 @@ SECTION HEADER #4
 SECTION HEADER #5
    .rsrc name
      1E0 virtual size
-   2E000 virtual address (000000014002E000 to 000000014002E1DF)
+   26000 virtual address (0000000140026000 to 00000001400261DF)
      200 size of raw data
-   2A600 file pointer to raw data (0002A600 to 0002A7FF)
+   23E00 file pointer to raw data (00023E00 to 00023FFF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -146,9 +146,9 @@ SECTION HEADER #5
 SECTION HEADER #6
   .reloc name
      190 virtual size
-   2F000 virtual address (000000014002F000 to 000000014002F18F)
+   27000 virtual address (0000000140027000 to 000000014002718F)
      200 size of raw data
-   2A800 file pointer to raw data (0002A800 to 0002A9FF)
+   24000 file pointer to raw data (00024000 to 000241FF)
        0 file pointer to relocation table
        0 file pointer to line numbers
        0 number of relocations
@@ -161,8 +161,8 @@ SECTION HEADER #6
   Summary
 
         1000 .data
-        3000 .pdata
-        7000 .rdata
+        2000 .pdata
+        5000 .rdata
         1000 .reloc
         1000 .rsrc
-       22000 .text
+       1D000 .text
