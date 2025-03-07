@@ -6,11 +6,164 @@ Dump of file ..\cmake-build-release-x64\luac.exe
 
 File Type: EXECUTABLE IMAGE
 
+  Section contains the following exports for luac.exe
+
+    00000000 characteristics
+    FFFFFFFF time date stamp
+        0.00 version
+           1 ordinal base
+         141 number of functions
+         141 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001F2A0 luaL_addgsub
+          2    1 0001F3D0 luaL_addlstring
+          3    2 0001F420 luaL_addstring
+          4    3 0001F480 luaL_addvalue
+          5    4 0001F500 luaL_argerror
+          6    5 0001F610 luaL_buffinit
+          7    6 0001F630 luaL_buffinitsize
+          8    7 0001F670 luaL_callmeta
+          9    8 0001F6F0 luaL_checkany
+         10    9 0001F730 luaL_checkinteger
+         11    A 0001F7C0 luaL_checklstring
+         12    B 0001F810 luaL_checknumber
+         13    C 0001F870 luaL_checkoption
+         14    D 0001F950 luaL_checkstack
+         15    E 0001F9B0 luaL_checktype
+         16    F 0001FA00 luaL_checkudata
+         17   10 0001FA50 luaL_checkversion_
+         18   11 0001FAD0 luaL_error
+         19   12 0001FB30 luaL_execresult
+         20   13 0001FBB0 luaL_fileresult
+         21   14 0001FC50 luaL_getmetafield
+         22   15 0001FCD0 luaL_getsubtable
+         23   16 0001FD60 luaL_gsub
+         24   17 0001FE20 luaL_len
+         25   18 0001FE80 luaL_loadbufferx
+         26   19 0001FEB0 luaL_loadfilex
+         27   1A 00020190 luaL_loadstring
+         28   1B 000201D0 luaL_newmetatable
+         29   1C 00020270 luaL_newstate
+         30   1D 000202F0 luaL_optinteger
+         31   1E 00020340 luaL_optlstring
+         32   1F 000203E0 luaL_optnumber
+         33   20 00020450 luaL_prepbuffsize
+         34   21 00020460 luaL_pushresult
+         35   22 000204C0 luaL_pushresultsize
+         36   23 00020520 luaL_ref
+         37   24 000205E0 luaL_requiref
+         38   25 00020740 luaL_setfuncs
+         39   26 00020810 luaL_setmetatable
+         40   27 00020840 luaL_testudata
+         41   28 000208D0 luaL_tolstring
+         42   29 00020B30 luaL_traceback
+         43   2A 00021010 luaL_typeerror
+         44   2B 00021100 luaL_unref
+         45   2C 00021170 luaL_where
+         46   2D 00002A50 lua_absindex
+         47   2E 00002A80 lua_arith
+         48   2F 00002AD0 lua_atpanic
+         49   30 00002AF0 lua_callk
+         50   31 00002B80 lua_checkstack
+         51   32 00016BE0 lua_close
+         52   33 00002C10 lua_compare
+         53   34 00002CC0 lua_concat
+         54   35 00002D30 lua_copy
+         55   36 00002DA0 lua_createtable
+         56   37 00002E10 lua_dump
+         57   38 00002E50 lua_error
+         58   39 00002E90 lua_gc
+         59   3A 00003110 lua_getallocf
+         60   3B 00003130 lua_getfield
+         61   3C 00003150 lua_getglobal
+         62   3D 00008C20 lua_gethook
+         63   3E 00008C30 lua_gethookcount
+         64   3F 00008C40 lua_gethookmask
+         65   40 00003190 lua_geti
+         66   41 00008C50 lua_getinfo
+         67   42 00003250 lua_getiuservalue
+         68   43 00008DB0 lua_getlocal
+         69   44 000032C0 lua_getmetatable
+         70   45 00008E30 lua_getstack
+         71   46 00003330 lua_gettable
+         72   47 000033C0 lua_gettop
+         73   48 000033E0 lua_getupvalue
+         74   49 00003490 lua_iscfunction
+         75   4A 000034C0 lua_isinteger
+         76   4B 000034E0 lua_isnumber
+         77   4C 00003510 lua_isstring
+         78   4D 00003530 lua_isuserdata
+         79   4E 0000A360 lua_isyieldable
+         80   4F 00003560 lua_len
+         81   50 00003590 lua_load
+         82   51 00016BF0 lua_newstate
+         83   52 00016E70 lua_newthread
+         84   53 00003650 lua_newuserdatauv
+         85   54 000036C0 lua_next
+         86   55 00003700 lua_pcallk
+         87   56 00003840 lua_pushboolean
+         88   57 00003860 lua_pushcclosure
+         89   58 00003930 lua_pushfstring
+         90   59 00003980 lua_pushinteger
+         91   5A 000039A0 lua_pushlightuserdata
+         92   5B 000039C0 lua_pushlstring
+         93   5C 00003A20 lua_pushnil
+         94   5D 00003A30 lua_pushnumber
+         95   5E 00003A50 lua_pushstring
+         96   5F 00003AB0 lua_pushthread
+         97   60 00003AE0 lua_pushvalue
+         98   61 00003B10 lua_pushvfstring
+         99   62 00003B50 lua_rawequal
+        100   63 00003BB0 lua_rawget
+        101   64 00003C20 lua_rawgeti
+        102   65 00003C80 lua_rawgetp
+        103   66 00003CE0 lua_rawlen
+        104   67 00003D30 lua_rawset
+        105   68 00003D50 lua_rawseti
+        106   69 00003DB0 lua_rawsetp
+        107   6A 00016F90 lua_resetthread
+        108   6B 0000A380 lua_resume
+        109   6C 00003E30 lua_rotate
+        110   6D 00003F20 lua_setallocf
+        111   6E 00017020 lua_setcstacklimit
+        112   6F 00003F30 lua_setfield
+        113   70 00003F50 lua_setglobal
+        114   71 00008E70 lua_sethook
+        115   72 00003F90 lua_seti
+        116   73 00004060 lua_setiuservalue
+        117   74 00008ED0 lua_setlocal
+        118   75 000040F0 lua_setmetatable
+        119   76 000041A0 lua_settable
+        120   77 00004250 lua_settop
+        121   78 000042E0 lua_setupvalue
+        122   79 000043B0 lua_setwarnf
+        123   7A 000043D0 lua_status
+        124   7B 000043E0 lua_stringtonumber
+        125   7C 00004410 lua_toboolean
+        126   7D 00004440 lua_tocfunction
+        127   7E 00004480 lua_toclose
+        128   7F 000044E0 lua_tointegerx
+        129   80 00004530 lua_tolstring
+        130   81 000045E0 lua_tonumberx
+        131   82 00004630 lua_topointer
+        132   83 000046A0 lua_tothread
+        133   84 000046C0 lua_touserdata
+        134   85 00004720 lua_type
+        135   86 00004760 lua_typename
+        136   87 00004770 lua_upvalueid
+        137   88 000047D0 lua_upvaluejoin
+        138   89 00004820 lua_version
+        139   8A 00004830 lua_warning
+        140   8B 00004840 lua_xmove
+        141   8C 0000A590 lua_yieldk
+
   Summary
 
         1000 .data
-        2000 .pdata
-        5000 .rdata
+        3000 .pdata
+        7000 .rdata
         1000 .reloc
         1000 .rsrc
-       1D000 .text
+       22000 .text

@@ -25,7 +25,7 @@ File Type: DLL
 
         1000 .data
         3000 .pdata
-        A000 .rdata
+        9000 .rdata
         1000 .reloc
         1000 .rsrc
        2D000 .text

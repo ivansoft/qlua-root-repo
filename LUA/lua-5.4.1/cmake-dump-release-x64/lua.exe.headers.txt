@@ -11,7 +11,7 @@ File Type: EXECUTABLE IMAGE
 FILE HEADER VALUES
             8664 machine (x64)
                6 number of sections
-        67CB3BA2 time date stamp Fri Mar  7 21:32:02 2025
+        67CB47C3 time date stamp Fri Mar  7 22:23:47 2025
                0 file pointer to symbol table
                0 number of symbols
               F0 size of optional header
@@ -25,7 +25,7 @@ OPTIONAL HEADER VALUES
             2000 size of code
             2A00 size of initialized data
                0 size of uninitialized data
-            2400 entry point (0000000140002400)
+            2390 entry point (0000000140002390)
             1000 base of code
        140000000 image base (0000000140000000 to 0000000140008FFF)
             1000 section alignment
@@ -50,7 +50,7 @@ OPTIONAL HEADER VALUES
                0 loader flags
               10 number of directories
                0 [       0] RVA [size] of Export Directory
-            3DCC [      C8] RVA [size] of Import Directory
+            3DC4 [      C8] RVA [size] of Import Directory
             7000 [     1E0] RVA [size] of Resource Directory
             6000 [     228] RVA [size] of Exception Directory
                0 [       0] RVA [size] of Certificates Directory
@@ -69,8 +69,8 @@ OPTIONAL HEADER VALUES
 
 SECTION HEADER #1
    .text name
-    1F6C virtual size
-    1000 virtual address (0000000140001000 to 0000000140002F6B)
+    1EFC virtual size
+    1000 virtual address (0000000140001000 to 0000000140002EFB)
     2000 size of raw data
      400 file pointer to raw data (00000400 to 000023FF)
        0 file pointer to relocation table
@@ -83,8 +83,8 @@ SECTION HEADER #1
 
 SECTION HEADER #2
   .rdata name
-    18FA virtual size
-    3000 virtual address (0000000140003000 to 00000001400048F9)
+    18F2 virtual size
+    3000 virtual address (0000000140003000 to 00000001400048F1)
     1A00 size of raw data
     2400 file pointer to raw data (00002400 to 00003DFF)
        0 file pointer to relocation table
@@ -99,7 +99,7 @@ SECTION HEADER #2
 
         Time Type        Size      RVA  Pointer
     -------- ------- -------- -------- --------
-    67CB3BA2 coffgrp      284 0000396C     2D6C
+    67CB47C3 coffgrp      284 00003964     2D64
 
 SECTION HEADER #3
    .data name

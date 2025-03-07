@@ -10,52 +10,52 @@ File Type: EXECUTABLE IMAGE
 
     lua54.dll
              1400031E8 Import Address Table
-             140004080 Import Name Table
+             140004078 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
-                         129 lua_setfield
-                         122 lua_rawseti
-                         10F lua_pcallk
-                         144 lua_warning
-                         12A lua_setglobal
-                          8D luaL_openlibs
-                          9A luaL_traceback
-                          F0 lua_createtable
-                          87 luaL_len
-                          8C luaL_newstate
-                          88 luaL_loadbufferx
-                          89 luaL_loadfilex
-                          81 luaL_error
-                          7D luaL_checkstack
-                          77 luaL_callmeta
-                          F3 lua_gc
-                          80 luaL_checkversion_
-                         11E lua_rawgeti
-                         12B lua_sethook
-                          EE lua_concat
-                         101 lua_gettop
-                          F6 lua_getglobal
-                         114 lua_pushlightuserdata
-                         110 lua_pushboolean
-                         111 lua_pushcclosure
-                         112 lua_pushfstring
-                         118 lua_pushstring
-                         115 lua_pushlstring
-                         113 lua_pushinteger
-                         13E lua_touserdata
-                         13A lua_tolstring
-                         136 lua_toboolean
-                         139 lua_tointegerx
-                         140 lua_typename
-                         13F lua_type
-                         126 lua_rotate
-                         131 lua_settop
-                          EC lua_close
+                          70 lua_setfield
+                          69 lua_rawseti
+                          56 lua_pcallk
+                          8B lua_warning
+                          71 lua_setglobal
+                          1D luaL_openlibs
+                          2A luaL_traceback
+                          37 lua_createtable
+                          17 luaL_len
+                          1C luaL_newstate
+                          18 luaL_loadbufferx
+                          19 luaL_loadfilex
+                          11 luaL_error
+                           D luaL_checkstack
+                           7 luaL_callmeta
+                          3A lua_gc
+                          10 luaL_checkversion_
+                          65 lua_rawgeti
+                          72 lua_sethook
+                          35 lua_concat
+                          48 lua_gettop
+                          3D lua_getglobal
+                          5B lua_pushlightuserdata
+                          57 lua_pushboolean
+                          58 lua_pushcclosure
+                          59 lua_pushfstring
+                          5F lua_pushstring
+                          5C lua_pushlstring
+                          5A lua_pushinteger
+                          85 lua_touserdata
+                          81 lua_tolstring
+                          7D lua_toboolean
+                          80 lua_tointegerx
+                          87 lua_typename
+                          86 lua_type
+                          6D lua_rotate
+                          78 lua_settop
+                          33 lua_close
 
     VCRUNTIME140.dll
              140003080 Import Address Table
-             140003F18 Import Name Table
+             140003F10 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -67,7 +67,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-stdio-l1-1-0.dll
              140003190 Import Address Table
-             140004028 Import Name Table
+             140004020 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -84,7 +84,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-environment-l1-1-0.dll
              1400030B0 Import Address Table
-             140003F48 Import Name Table
+             140003F40 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -92,7 +92,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-runtime-l1-1-0.dll
              1400030F0 Import Address Table
-             140003F88 Import Name Table
+             140003F80 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -118,7 +118,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-math-l1-1-0.dll
              1400030E0 Import Address Table
-             140003F78 Import Name Table
+             140003F70 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -126,7 +126,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-locale-l1-1-0.dll
              1400030D0 Import Address Table
-             140003F68 Import Name Table
+             140003F60 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -134,7 +134,7 @@ File Type: EXECUTABLE IMAGE
 
     api-ms-win-crt-heap-l1-1-0.dll
              1400030C0 Import Address Table
-             140003F58 Import Name Table
+             140003F50 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -142,7 +142,7 @@ File Type: EXECUTABLE IMAGE
 
     KERNEL32.dll
              140003000 Import Address Table
-             140003E98 Import Name Table
+             140003E90 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 

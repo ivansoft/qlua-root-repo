@@ -9,14 +9,15 @@ File Type: EXECUTABLE IMAGE
   Section contains the following imports:
 
     VCRUNTIME140.dll
-             14001E080 Import Address Table
-             140022700 Import Name Table
+             140023080 Import Address Table
+             140028C08 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
                           1B __current_exception
                            8 __C_specific_handler
                           1D __intrinsic_setjmp
+                          42 strstr
                           3E memset
                           3B memcmp
                           3C memcpy
@@ -25,19 +26,20 @@ File Type: EXECUTABLE IMAGE
                           40 strchr
 
     api-ms-win-crt-string-l1-1-0.dll
-             14001E278 Import Address Table
-             1400228F8 Import Name Table
+             140023280 Import Address Table
+             140028E08 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
                           6C isprint
                           93 strspn
                           87 strcoll
+                          8E strncmp
                           92 strpbrk
 
     api-ms-win-crt-runtime-l1-1-0.dll
-             14001E150 Import Address Table
-             1400227D0 Import Name Table
+             140023158 Import Address Table
+             140028CE0 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -64,8 +66,8 @@ File Type: EXECUTABLE IMAGE
                           55 exit
 
     api-ms-win-crt-stdio-l1-1-0.dll
-             14001E200 Import Address Table
-             140022880 Import Name Table
+             140023208 Import Address Table
+             140028D90 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -85,8 +87,8 @@ File Type: EXECUTABLE IMAGE
                            3 __stdio_common_vfprintf
 
     api-ms-win-crt-locale-l1-1-0.dll
-             14001E100 Import Address Table
-             140022780 Import Name Table
+             140023108 Import Address Table
+             140028C90 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -94,8 +96,8 @@ File Type: EXECUTABLE IMAGE
                           12 localeconv
 
     api-ms-win-crt-math-l1-1-0.dll
-             14001E118 Import Address Table
-             140022798 Import Name Table
+             140023120 Import Address Table
+             140028CA8 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -107,24 +109,24 @@ File Type: EXECUTABLE IMAGE
                           CB frexp
 
     api-ms-win-crt-convert-l1-1-0.dll
-             14001E0D0 Import Address Table
-             140022750 Import Name Table
+             1400230D8 Import Address Table
+             140028C60 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
                           5E strtod
 
     api-ms-win-crt-time-l1-1-0.dll
-             14001E2A0 Import Address Table
-             140022920 Import Name Table
+             1400232B0 Import Address Table
+             140028E38 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
                           30 _time64
 
     api-ms-win-crt-heap-l1-1-0.dll
-             14001E0E0 Import Address Table
-             140022760 Import Name Table
+             1400230E8 Import Address Table
+             140028C70 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -133,8 +135,8 @@ File Type: EXECUTABLE IMAGE
                           16 _set_new_mode
 
     KERNEL32.dll
-             14001E000 Import Address Table
-             140022680 Import Name Table
+             140023000 Import Address Table
+             140028B88 Import Name Table
                      0 time date stamp
                      0 Index of first forwarder reference
 
@@ -157,8 +159,8 @@ File Type: EXECUTABLE IMAGE
   Summary
 
         1000 .data
-        2000 .pdata
-        5000 .rdata
+        3000 .pdata
+        7000 .rdata
         1000 .reloc
         1000 .rsrc
-       1D000 .text
+       22000 .text
