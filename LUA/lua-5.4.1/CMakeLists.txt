@@ -28,22 +28,27 @@ set ( SRC_LUAC ${LUAC_DIR}/luac.c )
 
 include_directories ( ${LUA_DIR} )
 
-add_compile_definitions ( LUA_BUILD_AS_DLL )
 add_compile_options( /W4 )
 
-add_library ( objcore OBJECT $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${LUA_DIR}/> )
-add_library ( objaux OBJECT $<LIST:TRANSFORM,${SRC_AUX},PREPEND,${LUA_DIR}/> )
-add_library ( objlib OBJECT $<LIST:TRANSFORM,${SRC_LIB},PREPEND,${LUA_DIR}/> )
-add_library ( objlua OBJECT ${SRC_LUA} )
-add_library ( objluac OBJECT ${SRC_LUAC} )
+# https://cmake.org/cmake/help/latest/policy/CMP0076.html
+#   target_sources command converts relative paths to absolute
+cmake_policy ( SET CMP0076 OLD )
 
-add_library ( libluadll SHARED $<TARGET_OBJECTS:objcore> $<TARGET_OBJECTS:objaux> $<TARGET_OBJECTS:objlib> )
+add_library ( objcore INTERFACE )
+add_library ( objaux INTERFACE )
+target_sources ( objcore INTERFACE $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${CMAKE_CURRENT_SOURCE_DIR}/${LUA_DIR}/> )
+target_sources ( objaux INTERFACE $<LIST:TRANSFORM,${SRC_AUX},PREPEND,${CMAKE_CURRENT_SOURCE_DIR}/${LUA_DIR}/> )
+
+add_library ( libluadll SHARED $<LIST:TRANSFORM,${SRC_LIB},PREPEND,${LUA_DIR}/> )
+target_link_libraries ( libluadll PRIVATE objcore objaux )
+target_compile_definitions ( libluadll PRIVATE LUA_BUILD_AS_DLL )
 set_target_properties ( libluadll PROPERTIES OUTPUT_NAME lua54 )
 
-add_executable ( lua $<TARGET_OBJECTS:objlua> )
-target_link_libraries ( lua PUBLIC libluadll )
+add_executable ( lua ${SRC_LUA} )
+target_link_libraries ( lua PRIVATE libluadll )
 
-add_executable ( luac ${SRC_LUAC} $<TARGET_OBJECTS:objcore> $<TARGET_OBJECTS:objaux> )
+add_executable ( luac ${SRC_LUAC} )
+target_link_libraries ( luac PRIVATE objcore objaux )
 
 install( TARGETS libluadll RUNTIME DESTINATION bin )
 install( TARGETS lua RUNTIME DESTINATION bin )
