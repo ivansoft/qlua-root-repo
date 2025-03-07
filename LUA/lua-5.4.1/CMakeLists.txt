@@ -5,7 +5,7 @@ project ( lua C )
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
 # https://cmake.org/cmake/help/latest/prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.html
 # automatically create .def file with all global symbols found in the input .obj files for a SHARED library
-set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS YES CACHE BOOL "Export all symbols")
+# set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS YES CACHE BOOL "Export all symbols")
 
 set ( LUA_DIR src.lua CACHE PATH "Where to search Lua sources." )
 set ( LUAC_DIR src.luac CACHE PATH "Where to search Luac sources." )
@@ -28,6 +28,7 @@ set ( SRC_LUAC ${LUAC_DIR}/luac.c )
 
 include_directories ( ${LUA_DIR} )
 
+add_compile_definitions ( LUA_BUILD_AS_DLL )
 add_compile_options( /W4 )
 
 add_library ( objcore OBJECT $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${LUA_DIR}/> )
