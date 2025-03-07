@@ -1,0 +1,172 @@
+Microsoft (R) COFF/PE Dumper Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file ..\cmake-build-release-x64\lua.exe
+
+File Type: EXECUTABLE IMAGE
+
+  Section contains the following imports:
+
+    lua54.dll
+             1400031E8 Import Address Table
+             140004080 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         129 lua_setfield
+                         122 lua_rawseti
+                         10F lua_pcallk
+                         144 lua_warning
+                         12A lua_setglobal
+                          8D luaL_openlibs
+                          9A luaL_traceback
+                          F0 lua_createtable
+                          87 luaL_len
+                          8C luaL_newstate
+                          88 luaL_loadbufferx
+                          89 luaL_loadfilex
+                          81 luaL_error
+                          7D luaL_checkstack
+                          77 luaL_callmeta
+                          F3 lua_gc
+                          80 luaL_checkversion_
+                         11E lua_rawgeti
+                         12B lua_sethook
+                          EE lua_concat
+                         101 lua_gettop
+                          F6 lua_getglobal
+                         114 lua_pushlightuserdata
+                         110 lua_pushboolean
+                         111 lua_pushcclosure
+                         112 lua_pushfstring
+                         118 lua_pushstring
+                         115 lua_pushlstring
+                         113 lua_pushinteger
+                         13E lua_touserdata
+                         13A lua_tolstring
+                         136 lua_toboolean
+                         139 lua_tointegerx
+                         140 lua_typename
+                         13F lua_type
+                         126 lua_rotate
+                         131 lua_settop
+                          EC lua_close
+
+    VCRUNTIME140.dll
+             140003080 Import Address Table
+             140003F18 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C memcpy
+                          1B __current_exception
+                          3E memset
+                          1C __current_exception_context
+                           8 __C_specific_handler
+
+    api-ms-win-crt-stdio-l1-1-0.dll
+             140003190 Import Address Table
+             140004028 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 _isatty
+                           3 __stdio_common_vfprintf
+                          8A fwrite
+                          80 fputs
+                          26 _fileno
+                          7A fgets
+                          77 fflush
+                           0 __acrt_iob_func
+                           1 __p__commode
+                          54 _set_fmode
+
+    api-ms-win-crt-environment-l1-1-0.dll
+             1400030B0 Import Address Table
+             140003F48 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 getenv
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             1400030F0 Import Address Table
+             140003F88 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C _register_onexit_function
+                          34 _initialize_onexit_table
+                          67 terminate
+                          1E _crt_atexit
+                          15 _c_exit
+                          16 _cexit
+                           5 __p___argv
+                           4 __p___argc
+                          23 _exit
+                          55 exit
+                          37 _initterm_e
+                          36 _initterm
+                          28 _get_initial_narrow_environment
+                          33 _initialize_narrow_environment
+                          18 _configure_narrow_argv
+                          3D _register_thread_local_exe_atexit_callback
+                          42 _set_app_type
+                          40 _seh_filter_exe
+                          63 signal
+
+    api-ms-win-crt-math-l1-1-0.dll
+             1400030E0 Import Address Table
+             140003F78 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 __setusermatherr
+
+    api-ms-win-crt-locale-l1-1-0.dll
+             1400030D0 Import Address Table
+             140003F68 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 _configthreadlocale
+
+    api-ms-win-crt-heap-l1-1-0.dll
+             1400030C0 Import Address Table
+             140003F58 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 _set_new_mode
+
+    KERNEL32.dll
+             140003000 Import Address Table
+             140003E98 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         221 GetCurrentProcess
+                         4E7 RtlLookupFunctionEntry
+                         282 GetModuleHandleW
+                         38E IsDebuggerPresent
+                         378 InitializeSListHead
+                         2F8 GetSystemTimeAsFileTime
+                         226 GetCurrentThreadId
+                         222 GetCurrentProcessId
+                         45B QueryPerformanceCounter
+                         395 IsProcessorFeaturePresent
+                         5AC TerminateProcess
+                         4EE RtlVirtualUnwind
+                         58D SetUnhandledExceptionFilter
+                         5CE UnhandledExceptionFilter
+                         4DF RtlCaptureContext
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
