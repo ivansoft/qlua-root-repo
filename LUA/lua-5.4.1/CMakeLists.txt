@@ -26,10 +26,8 @@ set ( SRC_LIB lbaselib.c ldblib.c liolib.c lmathlib.c loslib.c ltablib.c lstrlib
 set ( SRC_LUA ${LUA_DIR}/lua.c )
 set ( SRC_LUAC ${LUAC_DIR}/luac.c )
 
-# include_directories ( src ${CMAKE_CURRENT_BINARY_DIR} )
 include_directories ( ${LUA_DIR} )
 
-# add_compile_options(/W4 /WX)
 add_compile_options( /W4 )
 
 add_library ( objcore OBJECT $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${LUA_DIR}/> )
@@ -38,20 +36,13 @@ add_library ( objlib OBJECT $<LIST:TRANSFORM,${SRC_LIB},PREPEND,${LUA_DIR}/> )
 add_library ( objlua OBJECT ${SRC_LUA} )
 add_library ( objluac OBJECT ${SRC_LUAC} )
 
-# add_library ( liblua ${SRC_CORE} ${SRC_LIB} )
-# set_target_properties ( liblua PROPERTIES OUTPUT_NAME lua )
-
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY )
-
 add_library ( libluadll SHARED $<TARGET_OBJECTS:objcore> $<TARGET_OBJECTS:objaux> $<TARGET_OBJECTS:objlib> )
-target_compile_definitions ( libluadll PUBLIC )  # _CRT_SECURE_NO_WARNINGS
-set_target_properties ( libluadll PROPERTIES OUTPUT_NAME lua54 )  # ENABLE_EXPORTS
+set_target_properties ( libluadll PROPERTIES OUTPUT_NAME lua54 )
 
 add_executable ( lua $<TARGET_OBJECTS:objlua> )
 target_link_libraries ( lua PUBLIC libluadll )
 
 add_executable ( luac ${SRC_LUAC} $<TARGET_OBJECTS:objcore> $<TARGET_OBJECTS:objaux> )
-# target_link_libraries ( luac liblua )
 
 install( TARGETS libluadll RUNTIME DESTINATION bin )
 install( TARGETS lua RUNTIME DESTINATION bin )
