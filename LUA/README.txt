@@ -16,7 +16,7 @@ IDE
 
 https://github.com/Roffild/qlua-annotations
 
-https://marketplace.visualstudio.com/items?itemName=sumneko.lua (рекомендую)
+https://marketplace.visualstudio.com/items?itemName=sumneko.lua (СЂРµРєРѕРјРµРЅРґСѓСЋ)
 
 ===========================
 
