@@ -5,9 +5,6 @@ add_compile_options( /W4 )  # -Wall
 
 # set ( CMAKE_GENERATOR "NMake Makefiles" CACHE INTERNAL "Generate NMake instead of VS Project." FORCE )
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
-# https://cmake.org/cmake/help/latest/prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.html
-# automatically create .def file with all global symbols found in the input .obj files for a SHARED library
-# set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS YES CACHE BOOL "Export all symbols")
 
 set ( LUA_DIR src.lua CACHE PATH "Where to search Lua sources." )
 set ( LUAC_DIR src.luac CACHE PATH "Where to search Luac sources." )
@@ -32,11 +29,6 @@ prepend_with_path ( ${LUA_DIR} SRC_LIB ${SRC_LIB} )
 prepend_with_path ( ${LUA_DIR} SRC_AUX ${SRC_AUX} )
 prepend_with_path ( ${LUA_DIR} SRC_LUA ${SRC_LUA} )
 prepend_with_path ( ${LUAC_DIR} SRC_LUAC ${SRC_LUAC} )
-
-# generator expressions result is not exactly known at configuration stage, it becomes known only at the build! stage
-# message ( STATUS "SRC_CORE $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${LUA_DIR}/>" )
-# file will be written only at the end of the configuration stage
-# file( GENERATE OUTPUT "debug_GENERATE.txt" CONTENT "SRC_CORE $<LIST:TRANSFORM,${SRC_CORE},PREPEND,${LUA_DIR}/>\n" )
 
 include_directories ( ${LUA_DIR} )
 
