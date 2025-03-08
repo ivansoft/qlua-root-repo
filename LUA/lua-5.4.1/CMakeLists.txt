@@ -1,5 +1,7 @@
 cmake_minimum_required ( VERSION 3.30 )
 project ( lua C )
+set ( CMAKE_C_STANDARD 99 )
+set ( CMAKE_C_STANDARD_REQUIRED True )
 
 add_compile_options( /W4 )  # -Wall
 
