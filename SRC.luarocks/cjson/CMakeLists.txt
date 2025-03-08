@@ -3,14 +3,18 @@
 #       Unix: export LUA_DIR=/home/user/pkg
 #       Windows: set LUA_DIR=c:\lua51
 
+cmake_minimum_required(VERSION 3.11)
 project(lua-cjson C)
-cmake_minimum_required(VERSION 2.6)
 
 string( TOLOWER ${CMAKE_C_COMPILER_ARCHITECTURE_ID} ARCH )
 
-set ( LUA_HOME "C:/FX/LUA/lua-5.4.1" )
-#set ( LUA_HOME "C:/FX/LUA/lua-5.3.5" )
-set ( ENV{LUA_DIR} "${LUA_HOME}/build/${ARCH}" )
+# set(CMAKE_CURRENT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+set ( LUA_HOME "../../LUA/lua-5.4.1" )
+#set ( LUA_HOME "../../LUA/lua-5.3.5" )
+cmake_path ( ABSOLUTE_PATH LUA_HOME NORMALIZE )
+message(STATUS "Absolute path: ${LUA_HOME}")
+set ( ENV{LUA_DIR} "${LUA_HOME}" )
 message("LUA_DIR --> " $ENV{LUA_DIR})
 set(LUA_VERSION "5.4")
 #set(LUA_VERSION "5.3")
@@ -29,17 +33,18 @@ endif()
 #find_package(Lua REQUIRED)
 set(LUA_INCLUDE_DIR "$ENV{LUA_DIR}/include")
 set(LUA_LIBRARY "$ENV{LUA_DIR}/lib/lua${LUA_POSTFIX}.lib")
-message("LUA_FOUND --> ${LUA_FOUND} ${LUA_VERSION_STRING} ${LUA_INCLUDE_DIR} ${LUA_LIBRARIES} ${LUA_LIBRARY}")
+# message("LUA_FOUND --> ${LUA_FOUND} ${LUA_VERSION_STRING} ${LUA_INCLUDE_DIR} ${LUA_LIBRARIES} ${LUA_LIBRARY}")
+message("LUA_FOUND --> ${LUA_VERSION_STRING} ${LUA_INCLUDE_DIR} ${LUA_LIBRARIES} ${LUA_LIBRARY}")
 include_directories(${LUA_INCLUDE_DIR})
 
 if(NOT USE_INTERNAL_FPCONV)
     # Use libc number conversion routines (strtod(), sprintf())
-    set(FPCONV_SOURCES fpconv.c)
+    set(FPCONV_SOURCES src/fpconv.c)
 else()
     message("-DUSE_INTERNAL_FPCONV")
     # Use internal number conversion routines
     add_definitions(-DUSE_INTERNAL_FPCONV)
-    set(FPCONV_SOURCES g_fmt.c dtoa.c)
+    set(FPCONV_SOURCES src/g_fmt.c src/dtoa.c)
 
     include(TestBigEndian)
     TEST_BIG_ENDIAN(IEEE_BIG_ENDIAN)
@@ -93,7 +98,7 @@ endif()
 
 #add_definitions(-DENABLE_CJSON_GLOBAL)
 
-add_library(cjson MODULE lua_cjson.c strbuf.c ${FPCONV_SOURCES})
+add_library(cjson MODULE src/lua_cjson.c src/strbuf.c ${FPCONV_SOURCES})
 set_target_properties(cjson PROPERTIES PREFIX "")
 target_link_libraries(cjson ${_MODULE_LINK})
 target_link_options(cjson PRIVATE /EXPORT:luaopen_cjson /EXPORT:luaopen_cjson_safe )
