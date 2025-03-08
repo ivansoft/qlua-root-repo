@@ -3,7 +3,6 @@ project ( lua C )
 
 add_compile_options( /W4 )  # -Wall
 
-# set ( CMAKE_GENERATOR "NMake Makefiles" CACHE INTERNAL "Generate NMake instead of VS Project." FORCE )
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
 
 set ( LUA_DIR src.lua CACHE PATH "Where to search Lua sources." )

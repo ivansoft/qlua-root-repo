@@ -1,6 +1,9 @@
 cmake_minimum_required ( VERSION 3.30 )
 project ( lua C )
 
+# https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR.html
+#   variable should never be modified by project code
+#   may be selected via the cmake -G option, or via the CMAKE_GENERATOR environment variable
 # set ( CMAKE_GENERATOR "NMake Makefiles" CACHE INTERNAL "Generate NMake instead of VS Project." FORCE )
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
 # https://cmake.org/cmake/help/latest/prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.html
