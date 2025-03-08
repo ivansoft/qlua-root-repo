@@ -76,7 +76,7 @@ del /Q %cmake_build_dir%\CMakeCache.txt"
 goto END
 
 :DUMPBIN
-dumpbin64.bat
+dumpbin64.bat %cmake_build_dir%
 
 :END
 endlocal
