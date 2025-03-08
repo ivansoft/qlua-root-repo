@@ -41,7 +41,6 @@ add_executable ( lua ${SRC_LUA} )
 target_link_libraries ( lua PRIVATE libluadll )
 
 add_executable ( luac ${SRC_LUAC} ${SRC_CORE} ${SRC_AUX} )
-target_link_libraries ( luac PRIVATE )
 
 install( TARGETS libluadll RUNTIME )
 install( TARGETS lua RUNTIME )
