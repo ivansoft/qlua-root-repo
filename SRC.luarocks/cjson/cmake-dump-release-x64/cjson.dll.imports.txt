@@ -1,0 +1,156 @@
+Microsoft (R) COFF/PE Dumper Version 14.43.34808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file ..\cmake-build-release-x64\cjson.dll
+
+File Type: DLL
+
+  Section contains the following imports:
+
+    lua54.dll
+             180005180 Import Address Table
+             180006760 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C luaL_checkoption
+                          11 luaL_error
+                           9 luaL_checkinteger
+                           A luaL_checklstring
+                           4 luaL_argerror
+                          78 lua_settop
+                          56 lua_pcallk
+                          76 lua_setmetatable
+                          69 lua_rawseti
+                          68 lua_rawset
+                          70 lua_setfield
+                          54 lua_newuserdatauv
+                          26 luaL_setfuncs
+                          55 lua_next
+                          37 lua_createtable
+                          65 lua_rawgeti
+                          3C lua_getfield
+                          5B lua_pushlightuserdata
+                          57 lua_pushboolean
+                          58 lua_pushcclosure
+                          5F lua_pushstring
+                          5C lua_pushlstring
+                          5A lua_pushinteger
+                          5E lua_pushnumber
+                          5D lua_pushnil
+                          85 lua_touserdata
+                          81 lua_tolstring
+                          7D lua_toboolean
+                          82 lua_tonumberx
+                          87 lua_typename
+                          86 lua_type
+                          32 lua_checkstack
+                          6D lua_rotate
+                          61 lua_pushvalue
+                          48 lua_gettop
+
+    VCRUNTIME140.dll
+             180005080 Import Address Table
+             180006660 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C memcpy
+                          40 strchr
+                          25 __std_type_info_destroy_list
+                          3E memset
+                           8 __C_specific_handler
+
+    api-ms-win-crt-string-l1-1-0.dll
+             180005168 Import Address Table
+             180006748 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          8E strncmp
+                          34 _strnicmp
+
+    api-ms-win-crt-stdio-l1-1-0.dll
+             180005148 Import Address Table
+             180006728 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 __stdio_common_vfprintf
+                           0 __acrt_iob_func
+                           D __stdio_common_vsprintf
+
+    api-ms-win-crt-math-l1-1-0.dll
+             1800050E0 Import Address Table
+             1800066C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          BE floor
+
+    api-ms-win-crt-heap-l1-1-0.dll
+             1800050C0 Import Address Table
+             1800066A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 free
+                          1A realloc
+                          19 malloc
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             1800050F0 Import Address Table
+             1800066D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 _configure_narrow_argv
+                          54 abort
+                          33 _initialize_narrow_environment
+                          34 _initialize_onexit_table
+                          37 _initterm_e
+                          16 _cexit
+                          36 _initterm
+                          55 exit
+                          3F _seh_filter_dll
+                          22 _execute_onexit_table
+
+    api-ms-win-crt-convert-l1-1-0.dll
+             1800050B0 Import Address Table
+             180006690 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          5E strtod
+
+    KERNEL32.dll
+             180005000 Import Address Table
+             1800065E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4EE RtlVirtualUnwind
+                         38E IsDebuggerPresent
+                         378 InitializeSListHead
+                         125 DisableThreadLibraryCalls
+                         2F8 GetSystemTimeAsFileTime
+                         226 GetCurrentThreadId
+                         222 GetCurrentProcessId
+                         45B QueryPerformanceCounter
+                         395 IsProcessorFeaturePresent
+                         5AC TerminateProcess
+                         221 GetCurrentProcess
+                         58D SetUnhandledExceptionFilter
+                         5CE UnhandledExceptionFilter
+                         4E7 RtlLookupFunctionEntry
+                         4DF RtlCaptureContext
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
