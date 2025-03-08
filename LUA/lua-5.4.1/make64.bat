@@ -58,7 +58,7 @@ goto END
 
 :INSTALL
 if NOT "%_CONFIGBUILD%" == "" echo - - - - - - - - - - - - - - - - - - - -
-cmake --install "%cmake_build_dir%" --prefix "."
+cmake --install "%cmake_build_dir%" --prefix "%CD%"
 
 if ERRORLEVEL==1 goto END
 if NOT "%_CONFIGBUILD%" == "" goto DUMPBIN
