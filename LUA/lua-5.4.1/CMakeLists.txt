@@ -31,6 +31,7 @@ prepend_with_path ( ${LUA_DIR} SRC_AUX ${SRC_AUX} )
 prepend_with_path ( ${LUA_DIR} SRC_LUA ${SRC_LUA} )
 prepend_with_path ( ${LUAC_DIR} SRC_LUAC ${SRC_LUAC} )
 
+
 include_directories ( ${LUA_DIR} )
 
 add_library ( libluadll SHARED ${SRC_LIB} ${SRC_CORE} ${SRC_AUX} )
@@ -41,6 +42,7 @@ add_executable ( lua ${SRC_LUA} )
 target_link_libraries ( lua PRIVATE libluadll )
 
 add_executable ( luac ${SRC_LUAC} ${SRC_CORE} ${SRC_AUX} )
+
 
 install( TARGETS libluadll RUNTIME )
 install( TARGETS lua RUNTIME )
