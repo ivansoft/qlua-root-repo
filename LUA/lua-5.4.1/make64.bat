@@ -61,7 +61,8 @@ if NOT "%_CONFIGBUILD%" == "" echo - - - - - - - - - - - - - - - - - - - -
 cmake --install "%cmake_build_dir%" --prefix "."
 
 if ERRORLEVEL==1 goto END
-goto DUMPBIN
+if NOT "%_CONFIGBUILD%" == "" goto DUMPBIN
+goto END
 
 :SYSINFO
 :: --system-information [file] it will dump additional information such as the cache, log files etc.
