@@ -58,6 +58,7 @@
 [submodule "native/openssl"]
 	path = SRC.native/openssl/openssl
 	url = https://github.com/openssl/openssl
+	branch = openssl-3.4
 [submodule "native/perl"]
 	path = SRC.native/openssl/strawberry-perl-5.40.0.1-bin
 	url = https://github.com/ivansoft/strawberry-perl-5.40.0.1-64bit-portable
